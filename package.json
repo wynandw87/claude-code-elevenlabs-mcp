@@ -1,0 +1,59 @@
+{
+  "name": "elevenlabs-mcp-server",
+  "version": "1.0.0",
+  "description": "ElevenLabs MCP server providing text-to-speech, sound effects, music generation, voice cloning, speech-to-speech, transcription, and voice isolation for Claude Code",
+  "main": "dist/index.js",
+  "bin": {
+    "elevenlabs-mcp-server": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepare": "npm run build",
+    "postinstall": "node scripts/postinstall.js",
+    "install:claude": "node scripts/install-claude-code.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "elevenlabs",
+    "tts",
+    "text-to-speech",
+    "voice",
+    "audio",
+    "sound-effects",
+    "voice-cloning",
+    "claude-code",
+    "ai-assistant"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wynandw87/claude-code-elevenlabs-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wynandw87/claude-code-elevenlabs-mcp/issues"
+  },
+  "homepage": "https://github.com/wynandw87/claude-code-elevenlabs-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.35.0",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
