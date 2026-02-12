@@ -301,7 +301,6 @@ This MCP server uses the official `@elevenlabs/elevenlabs-js` SDK to communicate
 ## Development
 
 ```text
-npm run dev      # Development mode with hot-reloading
 npm run build    # Build for production
 npm start        # Start production server
 ```
